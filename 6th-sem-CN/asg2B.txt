@@ -1,0 +1,33 @@
+A. Windows System 
+1. Go to Settings. 
+2. Navigate to Ethernet. 
+3. Click on Change Adapter Settings. 
+4. Right-click on the network adapter and select Properties. 
+5. Click on Internet Protocol Version 4 (TCP/IPv4). 
+6. Click on Properties. 
+7. Select "Use the following IP address" (i.e., static IP). 
+8. Set the IP address to 192.168.3.51 (Here, 192.168.3 is the Network ID and 51 is the 
+Host ID – user-defined as required). 
+9. After entering the IP address, the Subnet Mask is automatically set to 255.255.255.0. 
+10. Set the Default Gateway as 192.168.3.1.
+
+
+B. Linux System 
+1. Open a terminal and type “nmtui” to launch the Network Manager Text User 
+Interface:  
+2. Use the arrow keys to navigate and select Edit a connection, then press Enter. 
+3. Choose the network interface eth0, then select Edit and press Enter. 
+4. Scroll to the IPv4 Configuration section and set it to Manual. 
+5. Configure the following settings:  
+6. IP Address: 192.168.3.222 
+7. Subnet Mask: 255.255.255.0 
+8. Default Gateway: 192.168.3.1 
+9. Scroll down to the DNS Servers field and set:  
+10. Primary DNS: 8.8.8.8 
+11. Secondary DNS: 4.2.2.2 
+12. Select OK, then press Enter. 
+13. Back in the main menu, navigate to Activate a connection, select eth0, and 
+deactivate it. 
+14. Reactivate eth0 to apply the changes. 
+15. Exit nmtui. 
+16. Your network settings should now be updated. 
